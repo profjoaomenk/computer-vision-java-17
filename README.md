@@ -86,15 +86,21 @@ java -jar target/java17-cognitive-vision-1.0.0.jar
 
 ## Testar a API diretamente
 
-```Windows CMD:
+Windows CMD:
+
+```bash:
 curl.exe -X POST "http://localhost:8080/api/analyze" -H "Content-Type: application/json" -d "{\"url\":\"https://aka.ms/azsdk/image-analysis/sample.jpg\"}"
 ```
 
-```Windows PowerShell:
+Windows PowerShell:
+
+```bash
 curl.exe -X POST "http://localhost:8080/api/analyze" -H "Content-Type: application/json" -d '{\"url\":\"https://aka.ms/azsdk/image-analysis/sample.jpg\"}'
 ```
 
-```Linux/macOS:
+Linux/macOS:
+
+```bash
 curl -X POST "http://localhost:8080/api/analyze" -H "Content-Type: application/json" -d '{"url":"https://aka.ms/azsdk/image-analysis/sample.jpg"}'
 ```
 
