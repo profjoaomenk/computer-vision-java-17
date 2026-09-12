@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure AI Vision - Java 17</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<main class="container">
+    <section class="hero">
+        <span class="badge">JAVA 17 + AZURE AI VISION</span>
+        <h1>Central de Visão Computacional</h1>
+        <p>Informe uma URL pública de imagem e deixe o Azure analisar o conteúdo.</p>
+
+        <div class="form">
+            <input id="url" type="url"
+                   placeholder="https://.../imagem.jpg"
+                   value="https://aka.ms/azsdk/image-analysis/sample.jpg">
+            <button id="analyze">Analisar imagem</button>
+        </div>
+
+        <div id="status" class="status"></div>
+    </section>
+
+    <section id="result" class="result hidden">
+        <div class="image-card">
+            <img id="image" alt="Imagem analisada">
+        </div>
+
+        <div class="info-card">
+            <h2>Resultado da análise</h2>
+
+            <div class="caption">
+                <strong>Descrição</strong>
+                <p id="caption"></p>
+            </div>
+
+            <div>
+                <strong>Confiança</strong>
+                <p id="confidence"></p>
+            </div>
+
+            <div>
+                <strong>Tags identificadas</strong>
+                <div id="tags" class="tags"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        Exemplo didático • Spring Boot • Java 17 • Azure AI Vision
+    </footer>
+</main>
+
+<script src="/app.js"></script>
+</body>
+</html>
